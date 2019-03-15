@@ -28,6 +28,96 @@ main {
 
 /* --- v3 --- */
 
+.row1,
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+
+.row1 img {
+  display: block;
+  width: 388px;
+  height: 447px;
+  margin-left: 1px;
+  background: #ff87c5;
+} 
+
+.row1 div {
+  width: 593px;
+  height: 447px;
+  
+  background: #f0f0f0;
+}
+
+.row1 div h3 {
+  display: block;
+  margin-top: 116px;
+  margin-left: 100px;
+
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+.row1 div p {
+  width: 385px;
+  height: 93px;
+  margin-top: 17px;
+  margin-left: 100px;
+
+  font-size: 13pt;
+}
+
+.row1 div a {
+  display: block;
+  margin-top: 75px;
+  margin-left: 100px;
+
+  font-size: 13pt;
+  color: #adc742;
+  text-decoration: none;
+}
+
+.row2 span {
+  display: block;
+  width: 151px;
+  height: 147px;
+  margin-left: 97px;
+
+  font-size: 18pt;
+  line-height: 147px;
+  text-align: center;
+  color: white;
+
+  background: #aca298;
+}
+
+.row2 div {
+  width: 452px;
+  height: 257px;
+
+  color: white;
+
+  background: #adc742;
+}
+
+.row2 div h3 {
+  display: block;
+  margin-top: 67px;
+  margin-left: 100px;
+
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+.row2 div p {
+  width: 257px;
+  height: 74px;
+  margin-top: 17px;
+  margin-left: 100px;
+
+  font-weight: 400;
+  font-size: 13pt;
+}
 
 /* --- v4 --- */
 

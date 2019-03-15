@@ -1,36 +1,38 @@
-﻿/* --- Base structrure --- */
+/* --- Base structrure --- */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.site {
-    display: flex;
-    width: 1280px;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-}
-  
-.site-content {
-    flex: 1;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
-
-/* --- Variant 1 --- */
-
-
-/* --- Variant 2 --- */
+main {
+  flex: 1;
+}
 
 
-/* --- Variant 3 --- */
+/* --- v1 --- */
 
 
-/* --- Variant 4 --- */
+/* --- v2 --- */
 
 
-/* --- Variant 5 --- */
+/* --- v3 --- */
+
+
+/* --- v4 --- */
+
+
+/* --- v5 --- */
+
+
 

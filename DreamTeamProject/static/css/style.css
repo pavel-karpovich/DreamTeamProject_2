@@ -1,5 +1,6 @@
 ﻿.site {
   display: flex;
+  width: 1280px;
   min-height: 100vh;
   flex-direction: column;
 }
@@ -11,7 +12,6 @@
 /* Блок HEADER , состоит из 3-х блоков */
 header.var1 {
   font-family: ﻿ArialMT, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
-  width: 1280px;
   height: 104px;
   display: flex;
   justify-content: flex-start;

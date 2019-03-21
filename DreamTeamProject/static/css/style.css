@@ -39,7 +39,8 @@ main {
   width: 388px;
   height: 447px;
   margin-left: 1px;
-  background: #ff87c5;
+  background: #f0f0f0;
+  box-shadow:  0 0 15px black;
 } 
 
 .row1 div {
@@ -50,6 +51,7 @@ main {
 }
 
 .row1 div h3 {
+  font-family: 
   display: block;
   margin-top: 116px;
   margin-left: 100px;
@@ -82,13 +84,14 @@ main {
   width: 151px;
   height: 147px;
   margin-left: 97px;
+  z-index: -1;
 
   font-size: 18pt;
   line-height: 147px;
   text-align: center;
   color: white;
 
-  background: #aca298;
+  background: #f2cd69;
 }
 
 .row2 div {
@@ -97,7 +100,7 @@ main {
 
   color: white;
 
-  background: #adc742;
+  background: #268fb1;
 }
 
 .row2 div h3 {

@@ -1,0 +1,120 @@
+/* Блок HEADER , состоит из 3-х блоков */
+header.var1 {
+  font-family: "Open Sans";
+  width: 100%;
+  height: 104px;
+  display: flex;  
+  justify-content: flex-start;
+  background: #082838;
+}
+
+header.var1  a:hover {
+  text-shadow:0px 0px 5px red, 0px 0px 10px red;
+  color: #73cdeb;
+}
+
+.selected {
+  color: #53c1d1;
+}
+
+.selected:hover {
+  color: #ffffff !important;
+  text-shadow:0px 0px 5px #0261f0, 0px 0px 10px #0261f0;
+}
+
+/* Первый блок в header */
+.link-dream-team {
+  width: 231px;
+  height: 101px;
+  background: #d8d9da;
+  justify-self: flex-start;
+  margin-left: 151px;
+}
+
+.link-dream-team:hover {
+  background: #ffffff;
+  text-shadow: 0px 5px 10px #53c1d1;
+}
+
+.link-dream-team a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.link-dream-team a div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link-dream-team h2 {
+  font-family: OpenSans-ExtraBold, "Open Sans";
+  font-size: 19pt;
+  font-weight: 800;
+  color: #1c8aae;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.link-dream-team p {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 12pt;
+  color: #082838;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Второй блок в header */
+nav {
+  justify-content: stretch;
+  align-self: center;
+  flex-grow: 2;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  letter-spacing: -2px;
+ 
+}
+
+nav ul li:first-child {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  font-size: 16pt;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* Третий блок в header */
+.social-links {
+  width: 166px;
+  height: 42px;
+  margin: 4px 18px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background: #b3b3b3;
+}
+
+.social-links a {
+ margin: 0 8px;
+}
+
+.social-links a:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform 0.5s ease-out;
+}
+.fab {
+  color: #ffffff;
+}

@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1288px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+}

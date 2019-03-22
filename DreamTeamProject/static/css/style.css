@@ -24,7 +24,50 @@ main {
 
 
 /* --- v2 --- */
+.v2 {
+	display: flex;
+	width: 1290px;
+	height: 608px;
+	background: url(/DreamTeamProject/static/img/matrix.jpg) no-repeat;
+}
 
+.center-sidebar {
+	display:flex;
+	opacity:1;
+	height: 608px;
+	width: 390px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-left: 151px;	
+}
+.center-h{
+	padding: 70px 20px;
+  font-size: 28px;
+  font-family: "Open Sans";
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  font-weight: 800;
+
+}
+.ref-p {
+  padding: 11px 5px;
+color: rgba(255, 255, 255, 255);
+font-size: 20px;
+text-align: left;
+font-weight: 'bold';
+font-family: "Open Sans";
+}
+
+.reference-block p {
+	display:flex;
+	height: 46px;
+	width: 165px;
+	background-color:#1c8aae;
+	position: relative;
+	margin-left: -368px;
+	margin-top: 492px;
+	/*justify-content: center;*/
+	align-items: center;
+}
 
 /* --- v3 --- */
 

@@ -28,7 +28,7 @@ main {
 	display: flex;
 	width: 1290px;
 	height: 608px;
-	background: url(/DreamTeamProject/static/img/matrix.jpg) no-repeat;
+	background: url(/DreamTeamProject/static/img/MainPage/matrix.jpg) no-repeat;
 }
 
 .center-sidebar {

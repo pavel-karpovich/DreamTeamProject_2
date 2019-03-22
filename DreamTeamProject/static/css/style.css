@@ -23,10 +23,12 @@ main {
 /* --- v1 --- */
 /* Блок HEADER , состоит из 3-х блоков */
 header.var1 {
-  font-family: sans-serif;
+  font-family: "Open Sans";
+  width: 100%;
   height: 104px;
-  display: flex;
+  display: flex;  
   justify-content: flex-start;
+  background: #082838;
 }
 
 header.var1  a:hover {
@@ -34,7 +36,7 @@ header.var1  a:hover {
 }
 
 .selected {
-  color: rgba(189, 189, 189, 255);
+  color: #53c1d1;
 }
 
 .selected:hover {
@@ -44,10 +46,11 @@ header.var1  a:hover {
 
 /* Первый блок в header */
 .link-dream-team {
-  width: 228px;
-  height: 100px;
-  background: #adc742;
-  margin-left: 150px;
+  width: 231px;
+  height: 101px;
+  background: #d8d9da;
+  justify-self: flex-start;
+  margin-left: 151px;
 }
 
 .link-dream-team:hover {
@@ -66,16 +69,16 @@ header.var1  a:hover {
 }
 
 .link-dream-team h2 {
-  font-size: 16pt;
+  font-size: 24pt;
   font-weight: normal;
-  color: rgba(252, 255, 223, 255);
+  color: #1c8aae;
   margin: 27px 0 0 0;
   text-align: center;
 }
 
 .link-dream-team p {
   font-size: 10pt;
-  color: rgba(83, 85, 75, 255);
+  color: #082838;
   margin-top: 9px;
   margin-left: -5px;
   text-align: center;
@@ -83,8 +86,9 @@ header.var1  a:hover {
 
 /* Второй блок в header */
 nav {
-  width: 540px;
+  justify-content: stretch;
   align-self: center;
+  flex-grow: 2;
 }
 nav ul {
   display: flex;
@@ -99,28 +103,33 @@ nav ul li:first-child {
 
 nav ul li a {
   font-size: 12pt;
-  color: rgba(109, 102, 102, 255);
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* Третий блок в header */
 .social-links {
+  width: 166px;
+  height: 42px;
+  margin: 4px 18px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 86px;
+  align-self: center;
+  background: #b3b3b3;
 }
 
 .social-links a {
-  margin: 0 3px;
+ margin: 0 10px;
 }
 
 .social-links a:hover {
   transform: scale(1.5, 1.5);
-  transition: transform 1s ease-out;
-  border: 1px solid #000;
+  transition: transform 0.5s ease-out;
 }
-
+.fab {
+  color: #ffffff;
+}
 
 
 

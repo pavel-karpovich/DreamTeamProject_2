@@ -32,7 +32,7 @@ main {
   width: 1280px;  /* Задаем фиксированную ширину и высоту блока */
   height: 159px;
 
-  background-image: url("../img/members.png");  /* Делаем изображение фоном, используем относительный путь */
+  background-image: url("../img/Register/members.png");  /* Делаем изображение фоном, используем относительный путь */
 }
 
 .top-block h2 {
@@ -66,7 +66,7 @@ main {
   width: 1280px;
   height: 759px;
 
-  background-image: url("../img/background.png");
+  background-image: url("../img/Register/background.png");
 }
 
 /* --- Левая половина нижнего блока --- */

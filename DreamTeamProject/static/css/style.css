@@ -259,6 +259,9 @@ font-family: "Open Sans";
   margin-left: 0.5px; 
   
 }
+.greenblock h3 {
+  font-style: italic;
+}
 .smallblock {
   background: #ff87c5;
   margin-top: 21px;
@@ -286,7 +289,7 @@ height: 560px;
   margin-right: 3px;
   padding-left: 44px;
   padding-right: 43px;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 20%;
   color: #655050;
  
@@ -306,7 +309,6 @@ p{
 }
 h3 {
   font-size: 22px;
-  font-style: italic;
 }
 
 .Usltext {
@@ -316,7 +318,7 @@ h3 {
   color: #3d617f;
   text-align: right;
   padding-left: 125px; 
-  padding-top: 10px; 
+  padding-top: 30px; 
 }
 
 /* --- v5 --- */

@@ -2,15 +2,17 @@ footer
 {
   display: flex;
   width: 100%;
-  background: #214f5f;
+  background: #224f5f;
   flex-direction: column;
   align-items: flex-start;
   height: 260px;
- 
+  font-family: 'Open Sans';
+  
 }
 #main{
   display: flex;
   flex-direction: row;
+  
 
   width: 988px;
   margin:0 150px 0 150px;
@@ -20,23 +22,24 @@ footer
 
 #copyright /*стиль к элементу с id copyright где находится текст*/
 {
-  color: #fff;
+  color: #ffffff;
   width: 100%;
+  
   
 }
 
 #copyright p {
   
-  
-  
+  font-weight: 400;
   text-align: center;
+  font-size: 12px;
 }
 
 #block1
 {
   margin:  50px 0px;
- padding-right: 70px; 
-  color: #fff;
+  padding-right: 70px; 
+  color: #ffffff;
   border-right: #fff solid 1px;
   
 }
@@ -44,21 +47,25 @@ footer
 #block1 p {
  
   text-align: center;
+  font-size: 14px;
   
 }
 
 
 #block2
 {
- margin:  50px 0px;
- padding: 0px 50px; 
+  margin:  50px 0px;
+  padding: 0px 50px; 
   color: #fff;
   border-right: #fff solid 1px;
+  
 }
 
 #block2a
 {
   color: #1c83a6;
+  padding-top: 15px;
+  font-size: 18px;
   
 }
 
@@ -66,6 +73,7 @@ footer
 #block2 p {
   
   text-align: center;
+  font-size: 14px;
 }
 
 
@@ -74,11 +82,13 @@ footer
   margin: 50px;
   margin-right: 40px;
   padding-left: 20px;
-  color: #fff;
+  color: #ffffff;
+  
 
 }
 
 #block3 p {
   
   text-align: center;
+  font-size: 14px;
 }

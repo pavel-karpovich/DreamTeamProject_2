@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1288px;
+  width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
 }
@@ -141,7 +141,7 @@ main {
   margin-top: 66px;       /* Отступ от верхнего края до родительского блока */
   padding: 25px 0 0 30px; /* Устанавливаем края для контента (параграф + форма) */
 
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(79, 136, 158, 0.3);
 }
 
 .transparent-block p {  /* Заголовок формы */
@@ -156,7 +156,7 @@ main {
   height: 35px;
 }
 
-.first-name {         
+.first-name {
   margin-right: 14px; /* Отступ между первым и вторым полем ввода */
 }
 
@@ -175,7 +175,7 @@ label {               /* Заголовки полей ввода */
   display: block;     /* Способ отображения блочный - элемент занимает всю ширину родительского блока, 
   любой другой элемент начинается со следующей строки */
   margin-bottom: 5px; /* Отступ от верхнего края label до верхней границы элемента input, заголовки над input */
-
+  font-weight: 600;
   font-size: 13pt;
   color: rgba(64, 71, 74, 255);
 }
@@ -197,7 +197,7 @@ input {           /* Поля ввода */
 
   font-weight: 700;
   font-size: 12pt;
-  color: rgba(89, 93, 98, 255);
+  color: rgba(89, 93, 98, 1);
   text-transform: uppercase;
 
   background-color: lightblue;
@@ -205,5 +205,5 @@ input {           /* Поля ввода */
 }
 
 .button:hover {   /* :hover - псевдокласс, отвечает за то, что будет происходить при наведение курсора на элемент */
-  background-color: aquamarine;     /* При наведении курсора изменяем цвет кнопки */
+  background-color: rgb(70, 231, 236);     /* При наведении курсора изменяем цвет кнопки */
 }

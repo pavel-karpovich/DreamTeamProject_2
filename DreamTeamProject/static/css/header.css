@@ -9,7 +9,7 @@ header.var1 {
 }
 
 header.var1  a:hover {
-  text-shadow:0px 0px 5px red, 0px 0px 10px red;
+  text-shadow:0px 2px 5px #197d8a, 0px 2px 10px  #12505f;
   color: #73cdeb;
 }
 

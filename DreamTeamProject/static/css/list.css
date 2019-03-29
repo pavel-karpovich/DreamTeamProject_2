@@ -1,62 +1,143 @@
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box; /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.*/
+  margin: 0; /* отступ наружу*/
+  padding: 0; /* отступ внутрь*/
+}
+
+body {
+  display: flex; /*делает все дочерние элементы резиновыми — flex, а не инлайновыми или блочными, как было изначально. Если родительский блок содержит картинки или текст без оберток, они становятся анонимными flex-элементами. Свойство display для Flexbox может принимать два значения: flex — ведёт себя как блочный элемент. При рассчете ширины блоков приоритет у раскладки (при недостаточной ширине блоков контент может вылезать за границы)*/
+  flex-direction: column;/*Свойство flex-direction задаёт направление основных осей в контейнере и тем самым определяет положение флексов в контейнере. На само направление также влияет значение атрибута dir у контейнера. column
+  Главная ось располагается вертикально и направлена сверху вниз.*/
+  align-items: center;/*Свойство align-items выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении.*/
+  width: 1280px;/*ширина*/
+  min-height: 80vh;/*min-height устанавливает минимальную высоту области для содержимого элемента.
+  Примите во внимание, что минимальная высота элемента вычисляется по формуле:
+  min-height+padding(верхний и нижний)+border(ширина рамки)
+  т.е. если вы зададите min-height: 500px, padding: 5px, border 1px, то минимальная высота получится 512px.*/
+  margin: 0 auto;/*margin определяет расстояние по вертикали и/или горизонтали (его также называют "внешний отступ" или "поле") от внешнего края рамки текущего элемента до внутренней границы родительского элемента или до внешнего края элемента, который расположен рядом с текущим элементом.*/
+}
+
+main {
+  flex: 1;/**/
+}
+
+
+
+main {
+  font-family: "Open Sans", Arial, sans-serif; /* Устанавливаем нужный шрифт на всю страницу, принято указывать три вида: 
+  подключаемый желаемый шрифт; любой шрифт, взамен первому, если он не загрузился/отсутствует; 
+  типовой шрифт, который 100% есть на пк пользователя - monospace, cursive, fantasy */
+  flex: 1;
+}
+
+/* --- Верхний блок --- */
+
+.ban-block {
+  width: 1280px;  /* Задаем фиксированную ширину и высоту блока */
+  height: 159px;
+
+  background-image: url("../img/List/baner.jpg");  /* Делаем изображение фоном, используем относительный путь */
+}
+
+.ban-block h2 {
+  position: absolute; /* Выводим заголовок из потока */
+  z-index: 1;         /* Индекс 1, что бы заголовок отображался сверху других эелементов */
+
+  margin: 40px 0 0 300px; /* Выравниваем заголовок по центру margin: верх|право|низ|лево */
+
+  color: rgba(1,40,62,1); /* Цвет текста RGBA color: rgba(красный 1-255, зеленый 1-255, синий 1-255, прозрачность 0-1)*/
+  font-family: 'Open Sans'; /*название шрифта*/
+  letter-spacing: 10px; /*расстояние между буквами в слове*/
+  text-transform: uppercase; /*прописные буквы*/
+  font-weight: 700;         /* Жирность текста, нормальный текст 400, жирный 700 */
+  font-size: 38pt;          /* Размер текста, можно указывать в разным единицах, к примеру в px или em */
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1288px;
-    min-height: 100vh;
-    margin: 0 auto;
-  }
+}
+
+.ban-block:after {  /* :after -  псевдоэлемент для бело-прозрачной поверхности фона, 
+  в виде прозрачного блока накладываемого на поверхность родительского */
+  content: "";      /* Наличие обязательно, без контента не работает */
+  position: crelative; /* Относительная позиция */
+
+  display: block;     /* Делаем стиль отображения элемента блочным */
+  width: 1280px;
+  height: 159px;
+
+  background-color: rgba(242, 247, 248, 0.1);
+}
+
+/* --- Нижний блок --- */
+
+.fon-block {
+  display: flex;  /* Делаем стиль отображения элемента растягиваемым */
+  width: 1280px;
+  height: 601px;
+  background-image: url("../img/List/fon.jpg");
+
+}
+
+/* --- Центральный блок --- */
+
+.centr-block div{          /* Центральный блок */
+  display: flex;  /* Делаем стиль отображения элемента строчно-блочным */
+  flex-direction: column;
+  align-items: centr;
+  width: 880px;
+  height: 601px;
+  margin-left: 200px;
+  background-color: rgba(231,215,188,0.3);
+}
+
 table {
-    position: relative;
+  position: relative;
 }
 
-table img {
-    position: absolute;
-    margin-top: -601px;
-    z-index: -1;
+table t2 { /*фио участников*/
+  font-size: 38px;
+  color:  rgba(53,58,60,1);
+  font-family: 'Open Sans';
+  font-weight: 600;
+  text-shadow:0 0 10px rgb(247, 249, 250);
 }
 
-table t1 {
-    font-size: 48px;
-    color: #000;
-}
-
-table t2 {
-    font-size: 38px;
-    color: #000;
-}
-
-table table.r td {
-    border-radius: 60px 0 60px 0;
-    background: #e8e8e8;
+.r td { /*полоска под фио*/
+  border-radius: 60px 0 60px 0;
+  background:  rgba(248, 250, 250, 0.7);
+  box-shadow:0 0 10px rgb(33, 140, 167);
+ 
+  
 }
 
 table ul {
     margin: 0;
     padding: 0;
 }
-
-table li {
-    list-style: none;
-    margin-left: 35px;
-    margin-top: 10px;
+table li { /*кружочки форма*/
+  list-style: none;
+  margin-left: 35px;
+  margin-top: 10px;
 }
 
-table li:before {
-    content: '';
-    display: inline-block;
-    height: 55px;
-    width: 55px;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: #abc742;
-    margin-right: 25px;
-    margin-bottom: 10px;
+table li:before { /*кружочки*/
+  content: '';
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: rgba(0, 235, 235, 0.4);
+  margin-right: 25px;
+  margin-bottom: 10px;
+  box-shadow:0 0 10px rgb(33, 140, 167);
 }
+
+
+
+
+
+
+
+
+
+

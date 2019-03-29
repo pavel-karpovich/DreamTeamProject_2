@@ -38,7 +38,7 @@ footer
 #block1
 {
   margin:  50px 0px;
-  padding-right: 70px; 
+  padding: 0px 50px; 
   color: #ffffff;
   border-right: #fff solid 1px;
   
@@ -47,7 +47,8 @@ footer
 #block1 p {
  
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+
   
 }
 
@@ -55,7 +56,7 @@ footer
 #block2
 {
   margin:  50px 0px;
-  padding: 0px 50px; 
+  padding: 0px 100px; 
   color: #fff;
   border-right: #fff solid 1px;
   
@@ -65,7 +66,7 @@ footer
 {
   color: #1c83a6;
   padding-top: 15px;
-  font-size: 18px;
+  font-size: 24px;
   
 }
 
@@ -73,15 +74,14 @@ footer
 #block2 p {
   
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
 #block3
 {
-  margin: 50px;
-  margin-right: 40px;
-  padding-left: 20px;
+  margin:  50px 0px;
+  padding: 0px 50px; 
   color: #ffffff;
   
 
@@ -90,5 +90,5 @@ footer
 #block3 p {
   
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }

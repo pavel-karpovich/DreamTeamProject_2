@@ -18,10 +18,14 @@ namespace DreamTeamProject
 
             using (var server = new WebServer(url))
             {
+                People.Deserialize();
+
                 server.WithLocalSession();
                 server.RegisterModule(new StaticFilesModule(StaticFilesRootPath));
                 server.Module<StaticFilesModule>().UseRamCache = true;
                 
+                server.WithWebApiController<AccountController>(true);
+
                 server.RunAsync();
 #if DEBUG
                 var browser = new System.Diagnostics.Process()
@@ -31,7 +35,7 @@ namespace DreamTeamProject
                 browser.Start();
 #endif
                 Console.ReadKey(true);
-
+                People.Serialize();
 
             }
         }
@@ -47,9 +51,10 @@ namespace DreamTeamProject
                 return Path.Combine(Directory.GetParent(assemblyPath).Parent.Parent.FullName, "DreamTeamProject/static");
 #else
                 // This is when you have deployed the server.
-                return Path.Combine(assemblyPath, "html");
+                return Path.Combine(assemblyPath, "static");
 #endif
             }
         }
+
     }
 }

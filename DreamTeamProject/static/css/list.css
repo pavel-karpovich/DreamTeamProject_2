@@ -95,7 +95,7 @@ table {
   margin-left: 150px;
   margin-top: 75px;
   display: table-cell;
-  
+  overflow: auto;
   
   
 }

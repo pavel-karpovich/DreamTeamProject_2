@@ -71,11 +71,11 @@
                     <!-- Полупрозрачный блок с надписью и формой -->
                     <div class="transparent-block">
                         <p>РЕГИСТРАЦИЯ</p>
-                        <form action="#" method="post">
+                        <form>
                             <!-- В lavel атрибут for указывает к кому он относится, при нажании на label курсор перейдет на поле ввода -->
                             <label for="first name">Имя</label>
                             <input class="first-name" id="first name" type="text" name="first name" placeholder="Имя">
-                            <input class="last-name" type="text" name="last name" placeholder="Фамилия">
+                            <input class="last-name" id="last name" type="text" name="last name" placeholder="Фамилия">
                             <label for="email">Эл. адрес</label>
                             <input type="email" id="email" name="email" placeholder="Почта">
                             <label for="tel">Телефон</label>
@@ -84,7 +84,7 @@
                             <input type="password" id="password" name="password" placeholder="Пароль">
                             <label for="re-password">Подтвердите пароль</label>
                             <input type="password" id="re-password" name="re-password" placeholder="Подтвердите пароль">
-                            <input class="button" type="submit" name="submit" value="Зарегистрироваться">
+                            <input class="button" id="register" type="button" name="submit" value="Зарегистрироваться">
                         </form>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
         </div>
 
     </footer>
-
+    <script src="js/reg.js"></script>
 </body>
 
 </html>

@@ -90,7 +90,14 @@ main {
 }
 
 table {
+  
   position: relative;
+  margin-left: 150px;
+  margin-top: 75px;
+  display: table-cell;
+  
+  
+  
 }
 
 table t2 { /*фио участников*/
@@ -112,6 +119,7 @@ table t2 { /*фио участников*/
 table ul {
     margin: 0;
     padding: 0;
+  
 }
 table li { /*кружочки форма*/
   list-style: none;
@@ -129,7 +137,7 @@ table li:before { /*кружочки*/
   background-color: rgba(0, 235, 235, 0.4);
   margin-right: 25px;
   margin-bottom: 10px;
-  box-shadow:0 0 10px rgb(33, 140, 167);
+  box-shadow:0 0 10px rgb(132, 147, 151);
 }
 
 
